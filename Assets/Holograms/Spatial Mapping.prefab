@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 479652}
   - 114: {fileID: 11457956}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Spatial Mapping
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf1742a22d1db04f81b1ada1a33d00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DrawMaterial: {fileID: 0}
-  DrawVisualMeshes: 0
+  DrawMaterial: {fileID: 2100000, guid: 4b0f3315a044218428165ca0893aa0b5, type: 2}
+  DrawVisualMeshes: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
