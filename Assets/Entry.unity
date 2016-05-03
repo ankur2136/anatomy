@@ -131,7 +131,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11484806, guid: 25c522a4dc54c914e9ecab61cbbe9780, type: 2}
       propertyPath: StartingView
-      value: Default
+      value: CoreSystems
       objectReference: {fileID: 0}
     - target: {fileID: 11484806, guid: 25c522a4dc54c914e9ecab61cbbe9780, type: 2}
       propertyPath: movableAudioSource
