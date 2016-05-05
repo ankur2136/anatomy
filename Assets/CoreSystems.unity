@@ -90,6 +90,95 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &318695189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 318695191}
+  - 114: {fileID: 318695190}
+  m_Layer: 0
+  m_Name: LSR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &318695190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318695189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a032869a4baaefe4f9f29b31f50d5119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetCollisionLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  FallbackCollisionLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  IgnoreToolBox: 1
+  MinDistanceInMeters: 1
+  MaxDistanceInMeters: 2.5
+--- !u!4 &318695191
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318695189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9199998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &335204101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 335204103}
+  - 114: {fileID: 335204102}
+  m_Layer: 0
+  m_Name: WorldAnchorHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &335204102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335204101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5c7187a05fcc84a9717ebbdf948180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &335204103
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335204101}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9199998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &442867239
 Prefab:
   m_ObjectHideFlags: 0
@@ -448,6 +537,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc3f654c123f7484d8860ca4d67d3780, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &731172352 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 155816, guid: bc3f654c123f7484d8860ca4d67d3780, type: 2}
+  m_PrefabInternal: {fileID: 731172351}
 --- !u!1001 &746013463
 Prefab:
   m_ObjectHideFlags: 0
@@ -532,6 +625,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &958108945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 958108947}
+  - 114: {fileID: 958108946}
+  m_Layer: 0
+  m_Name: CardPOIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &958108946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958108945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276a323df11915b45bd63fd8fb76a8c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  POIFadeOutTime: 1
+  POIOpacityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  DescriptionSlideOutTime: 1
+  DescriptionSlideInTime: 0.5
+  DescriptionSlideDirection: {x: 0, y: 0, z: 0}
+  DescriptionSlideCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  CanTapCard: 1
+--- !u!4 &958108947
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958108945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9199998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &959914120
 Prefab:
   m_ObjectHideFlags: 0
@@ -661,7 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a077ee96225a3ac4486f20ce8df69604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cursor: {fileID: 0}
+  Cursor: {fileID: 731172352}
   DirectionIndicatorObject: {fileID: 133742, guid: 91d53ac6fe779034e8d6b89f2ceb84ff,
     type: 2}
   DirectionIndicatorColor: {r: 0, g: 0, b: 1, a: 1}
@@ -762,11 +912,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1754481896}
-  - 20: {fileID: 1754481895}
-  - 92: {fileID: 1754481894}
-  - 124: {fileID: 1754481893}
-  - 81: {fileID: 1754481892}
   - 114: {fileID: 1754481897}
+  - 20: {fileID: 1754481895}
+  - 81: {fileID: 1754481892}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -776,20 +924,6 @@ GameObject:
   m_IsActive: 1
 --- !u!81 &1754481892
 AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1754481891}
-  m_Enabled: 1
---- !u!124 &1754481893
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1754481891}
-  m_Enabled: 1
---- !u!92 &1754481894
-Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -855,7 +989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExtraMouseSensitivityScale: 3
   DefaultMouseSensitivity: 0.1
-  MouseLookButton: 3
+  MouseLookButton: 5
   IsControllerLookInverted: 1
 --- !u!1001 &1878670034
 Prefab:
