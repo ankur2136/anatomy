@@ -91,11 +91,6 @@ public class Button : GazeSelectionTarget, IFadeTarget
     private void Start()
     {
         cubeToMove = TransitionManager.Instance.ViewVolume.GetComponentInChildren<PlacementControl>();
-
-        if (TooltipObject != null)
-        {
-            TooltipObject.SetActive(false);
-        }
     }
 
     public void Highlight()

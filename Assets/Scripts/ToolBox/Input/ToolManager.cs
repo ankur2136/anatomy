@@ -69,7 +69,6 @@ public class ToolManager : Singleton<ToolManager>
 
         ShowButton.SetActive(false);
         BackButton.SetActive(false);
-        toolSounds.gameObject.SetActive(false);
     }
 
     private void OnDestroy()

@@ -68,7 +68,7 @@ public class ViewLoader : Singleton<ViewLoader>
     private IEnumerator Start()
     {
         yield return StartCoroutine(LoadCoreSystemsAsync());
-        ToolManager.Instance.HideTools(instant: true);
+        ToolManager.Instance.ShowTools();
     }
 
     public GameObject GetCurrentContent()
