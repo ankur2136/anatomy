@@ -227,7 +227,7 @@ Material:
       second: 1
     - first:
         name: _TransitionAlpha
-      second: 0
+      second: 1
     - first:
         name: _UVSec
       second: 0
@@ -300,7 +300,7 @@ Material:
       second: {r: 60, g: 0, b: 1, a: 0}
     - first:
         name: _Tint
-      second: {r: 0.36764705, g: 0, b: 0, a: 0.74509805}
+      second: {r: 1, g: 0, b: 0, a: 0.778}
     - first:
         name: _TintColor
       second: {r: 1, g: 1, b: 1, a: 1}

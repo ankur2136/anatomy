@@ -55,9 +55,6 @@ public class Cursor : Singleton<Cursor>
 
     private void Awake()
     {
-        // The cursor is hidden by default. It will get shown when we load the main scene
-        visible = false;
-
         stateImagesRepository = stateImages.ToDictionary(s => s.mode, s => s);
 
         if (!cursorMaterial)
